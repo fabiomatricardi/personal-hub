@@ -1,0 +1,24 @@
+[project]
+name = "my-hub"
+version = "1.2.0"
+description = "Multi-app Python suite with Vue 3 frontend"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.34.0",
+    "pydantic>=2.11.0",
+    "requests>=2.32.0",
+    "pymupdf>=1.27.0",
+    "python-multipart>=0.0.9",
+    "openai>=1.0.0",
+    "python-telegram-bot>=21.0",
+    "httpx>=0.27.0",
+    "beautifulsoup4>=4.12.0",
+    "apscheduler>=3.10.0",
+    "lxml>=5.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.0",
+]
