@@ -20,9 +20,12 @@ A desktop toolkit that bundles 7 apps into a single Python/Vue application: link
 
 ## Prerequisites
 
-- **Python 3.12+** — [python.org](https://python.org)
-- **UV** — Python package manager: `pip install uv`
-- **Node.js 18+** — [nodejs.org](https://nodejs.org)
+- **UV** — Python package manager (no Python required to install)
+  - Windows: `powershell -c "irm https://astral.sh/uv/install.ps1 | iex"`
+  - macOS/Linux: `curl -LsSf https://astral.sh/uv/install.sh | sh`
+- **Node.js 18+** — [nodejs.org](https://nodejs.org) (only needed for building frontend)
+
+> UV automatically downloads and installs Python 3.12 when you run `uv sync`. No manual Python installation needed — ever.
 
 ---
 
