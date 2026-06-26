@@ -15,10 +15,11 @@ PORT = 8999
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    import webbrowser
     from backend.services.cron_scheduler import init_scheduler
     init_scheduler()
-    webbrowser.open(f"http://localhost:{PORT}")
+    if getattr(sys, "frozen", False):
+        import webbrowser
+        webbrowser.open(f"http://localhost:{PORT}")
     yield
 
 
